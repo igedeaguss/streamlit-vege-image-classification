@@ -25,26 +25,21 @@ label_mapping = {
     14: 'Tomato'
 }
 
-# Buat dua kolom: satu untuk judul, satu untuk logo
-col1, col2 = st.columns([9, 1])  # rasio 9:1 supaya lebih lebar ke judul
-# Judul aplikasi
-with col1:
-    st.title("Klasifikasi Gambar Sayuran")
-# Logo GitHub + Link
-with col2:
-    st.markdown("""
-    <div style="text-align: right;">
-        <a href="https://github.com/igedeaguss/vegetable-image-classification/tree/main" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="30" height="30">
-        </a>
-    </div>
-    """, unsafe_allow_html=True)
+# Judul dan Logo GitHub dalam 1 baris horizontal
+st.markdown("""
+<div style="display: flex; align-items: center; justify-content: space-between;">
+    <h1 style="margin-bottom: 0;">Klasifikasi Gambar Sayuran</h1>
+    <a href="https://github.com/username/repo" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" style="height:40px; object-fit: contain;">
+    </a>
+</div>
+""", unsafe_allow_html=True)
 
 # Deskripsi singkat
 st.markdown("""
 Aplikasi ini melakukan klasifikasi gambar menjadi salah satu dari jenis sayuran berikut:
 
-🟢Bean, Bitter Gourd, Bottle Gourd, Brinjal, Broccoli, Cabbage, Capsicum, Carrot,  
+Bean, Bitter Gourd, Bottle Gourd, Brinjal, Broccoli, Cabbage, Capsicum, Carrot,  
 Cauliflower, Cucumber, Papaya, Potato, Pumpkin, Radish, dan Tomato.
 
 Unggah gambar sayuran, lalu tekan tombol **Prediksi** untuk melihat hasil klasifikasinya.
