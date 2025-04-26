@@ -29,7 +29,7 @@ label_mapping = {
 st.markdown("""
 <div style="display: flex; align-items: center; justify-content: space-between;">
     <h1 style="margin-bottom: 0;">Klasifikasi Gambar Sayuran</h1>
-    <a href="https://github.com/username/repo" target="_blank">
+    <a href="https://github.com/igedeaguss/vegetable-image-classification" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" style="height:40px; object-fit: contain;">
     </a>
 </div>
