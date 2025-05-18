@@ -3,6 +3,11 @@ import tensorflow as tf
 from PIL import Image
 import numpy as np
 
+st.set_page_config(
+    page_title="Aplikasi Klasifikasi Sayuran",  # Ini akan jadi judul di tab browser
+    page_icon="🥦",                    # Opsional: ikon kecil di tab
+    layout="centered",                # Bisa juga 'wide'
+)
 # Load model
 loaded_model = tf.keras.models.load_model('model/model_inceptionV3_epoch5.h5')
 
