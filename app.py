@@ -35,16 +35,16 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+image = Image.open("data nama sayuran.png")
 # Deskripsi singkat
 st.markdown("""
 Aplikasi ini melakukan klasifikasi gambar menjadi salah satu dari jenis sayuran berikut:
+""")
+st.image(image, caption="Contoh Sayuran", use_container_width=True)
 
-Bean, Bitter Gourd, Bottle Gourd, Brinjal, Broccoli, Cabbage, Capsicum, Carrot,  
-Cauliflower, Cucumber, Papaya, Potato, Pumpkin, Radish, dan Tomato.
-
+st.markdown("""
 Unggah gambar sayuran, lalu tekan tombol **Prediksi** untuk melihat hasil klasifikasinya.
 """)
-
 # Upload gambar
 uploaded_file = st.file_uploader("Unggah gambar", type=["jpg", "jpeg", "png"])
 
